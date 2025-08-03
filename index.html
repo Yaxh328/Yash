@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Yash Vaidya | Immersive Portfolio</title>
+  <link rel="icon" href="https://i.postimg.cc/8PvNTbJc/channels4-profile.jpg" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body class="dark-mode">
+  <!-- Navbar -->
+  <header class="navbar">
+    <a href="#hero" class="logo">Yash Vaidya.</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#videos">Videos</a></li>
+      <li><a href="#showcase">Showcase</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li>
+        <button id="theme-toggle" aria-label="Toggle Theme">
+          <span id="theme-icon">🌙</span>
+        </button>
+      </li>
+    </ul>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Yash Vaidya</h1>
+        <p class="hero-subtitle"><span class="typewriter"></span></p>
+        <a href="#videos" class="cta-btn">Explore My Work</a>
+      </div>
+      <canvas id="hero-canvas"></canvas>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="portfolio-section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-image-wrapper">
+          <img src="https://i.postimg.cc/k4d7H1vW/IMG-20250423-171307-035.webp" alt="Yash Vaidya" class="about-image" loading="lazy">
+        </div>
+        <p class="section-desc">
+          I'm Yash Vaidya, a passionate photo and video editor with years of experience turning ideas into stunning visuals. Specializing in high-impact thumbnails, banners, and logos, I blend technical skill with creative flair to deliver AAA-quality results. I focus on storytelling through visuals, ensuring every project is polished, animated, and engaging.
+        </p>
+        <div class="about-details">
+          <div class="detail-card">
+            <h3>Experience</h3>
+            <ul>
+              <li>5+ years in video editing with tools like After Effects and Premiere Pro.</li>
+              <li>Expert in photo manipulation using Photoshop and Lightroom.</li>
+              <li>Created content for YouTube channels, brands, and events.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="portfolio-section">
+      <div class="container">
+        <h2 class="section-title">My Skills</h2>
+        <p class="section-desc">A showcase of my technical expertise in editing and design.</p>
+        <div class="skills-grid">
+          <div class="skill-card" data-skill="90">
+            <h3>Programming</h3>
+            <div class="progress-bar"><div class="progress-fill"></div></div>
+          </div>
+          <div class="skill-card" data-skill="100">
+            <h3>Capcut</h3>
+            <div class="progress-bar"><div class="progress-fill"></div></div>
+          </div>
+          <div class="skill-card" data-skill="100">
+            <h3>Photoshop</h3>
+            <div class="progress-bar"><div class="progress-fill"></div></div>
+          </div>
+          <div class="skill-card" data-skill="90">
+            <h3>After Effects</h3>
+            <div class="progress-bar"><div class="progress-fill"></div></div>
+          </div>
+          <div class="skill-card" data-skill="100">
+            <h3>Wondershare Filmora</h3>
+            <div class="progress-bar"><div class="progress-fill"></div></div>
+          </div>
+          <div class="skill-card" data-skill="95">
+            <h3>Premiere Pro</h3>
+            <div class="progress-bar"><div class="progress-fill"></div></div>
+          </div>
+          <div class="skill-card" data-skill="80">
+            <h3>DaVinci Resolve</h3>
+            <div class="progress-bar"><div class="progress-fill"></div></div>
+          </div>
+          <div class="skill-card" data-skill="95">
+            <h3>Lightroom</h3>
+            <div class="progress-bar"><div class="progress-fill"></div></div>
+          </div>
+          <div class="skill-card" data-skill="98">
+            <h3>Canva</h3>
+            <div class="progress-bar"><div class="progress-fill"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section id="videos" class="portfolio-section">
+      <div class="container">
+        <h2 class="section-title">My Videos</h2>
+        <p class="section-desc">A collection of my edited videos showcasing creative storytelling and visual effects.</p>
+        <div class="video-gallery">
+          <div class="video-card">
+            <iframe width="319" height="567" src="https://go.screenpal.com/player/cTje2LnICgy?width=100%&height=100%&ff=1&title=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+            <h3>Krishna</h3>
+          </div>
+          <div class="video-card">
+            <iframe width="319" height="567" src="https://go.screenpal.com/player/cTje2GnICBW?width=100%&height=100%&ff=1&title=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+            <h3>Ganpatii</h3>
+          </div>
+          <div class="video-card">
+            <iframe width="383" height="567" src="https://www.youtube.com/embed/P4ydUVGmQcI" title="gojo satoru" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+            <h3>Gojo Satoru</h3>
+          </div>
+          <div class="video-card">
+            <iframe width="319" height="567" src="https://www.youtube.com/embed/Ok_cr5OdNtM" title="my fault" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+            <h3>My Fault</h3>
+          </div>
+          <div class="video-card">
+            <iframe width="319" height="567" src="https://www.youtube.com/embed/rZHVmkP0Da4" title="nature" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+            <h3>Nature</h3>
+          </div>
+          <div class="video-card">
+            <iframe width="383" height="567" src="https://www.youtube.com/embed/JtWvHWkAJTg" title="sukuna" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+            <h3>Sukuna</h3>
+          </div>
+          <div class="video-card">
+            <iframe width="319" height="567" src="https://go.screenpal.com/player/cTje2LnICga?width=100%&height=100%&ff=1&title=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+            <h3>Kedarnath</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Showcase Section -->
+    <section id="showcase" class="portfolio-section">
+      <div class="container">
+        <h2 class="section-title">Portfolio Showcase</h2>
+        <p class="section-desc">Explore my creative works in thumbnails, banners, and logos.</p>
+        <!-- YT Thumbnails -->
+        <div class="gallery">
+          <h3>YT Thumbnails</h3>
+          <div class="gallery-grid" id="yt-thumbnails"></div>
+        </div>
+        <!-- Banners -->
+        <div class="gallery">
+          <h3>Banners</h3>
+          <div class="gallery-grid" id="banners"></div>
+        </div>
+        <!-- Logos -->
+        <div class="gallery">
+          <h3>Logos</h3>
+          <div class="gallery-grid" id="logos"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="portfolio-section">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-desc">Let's create something amazing together!</p>
+        <canvas id="contact-canvas" class="contact-canvas"></canvas>
+        <div class="contact-gallery">
+          <div class="contact-card">
+            <img src="https://i.ibb.co/Tq4DWTmf/instagram-icon-512x512-ggh8x3cn.png" alt="Instagram Logo" class="contact-logo" loading="lazy">
+            <h3>Instagram</h3>
+            <a href="https://www.instagram.com/yaxh_s11/" target="_blank" rel="noopener" class="contact-link">@yaxh_s11</a>
+          </div>
+          <div class="contact-card">
+            <img src="https://i.postimg.cc/W3yX3gFb/whatsapp-logo-whatsapp-icon-whatsapp-transparent-free-png.png" alt="WhatsApp Logo" class="contact-logo" loading="lazy">
+            <h3>WhatsApp</h3>
+            <a href="https://wa.me/+918149575334?text=Hello" target="_blank" rel="noopener" class="contact-link">8149575334</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal for Full-Screen Viewing -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <span class="modal-close" aria-label="Close Modal">&times;</span>
+    <div class="modal-content">
+      <div class="modal-loader">Loading...</div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" aria-label="Back to Top">↑</button>
+
+  <!-- Footer -->
+  <footer>
+    <p>© <span id="current-year"></span> Team Emogi. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
